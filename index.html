@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Luiz Oliveira</title>
+    <title>Luiz de Oliveira</title>
 </head>
 <body>
     <header> <!-- Nav -->
@@ -19,18 +19,27 @@
         </nav>
     </header>
     <main> <!-- Conteudo principal -->
-        <section> <!-- Sobre mim -->
-            <h2>Sobre Mim</h2>
-            <img src="./assets/sobre/sobreMim.png" alt="Foto Luiz Oliveira"> <!-- Foto Tempória - Tirar outra depois -->
-            <p> <!-- Descrição -->
-                Meu nome é Luiz Oliveira, tenho 20 anos, moro em Macaé - RJ e sou um Desenvolvedor Web Full-Stack. 
-                Atualmente curso a faculdade de Sistemas de informação, desenvolvo projetos da UFRJ e trabalho com desenvolvimento
-                 de websites para todo tipo de negócio. <br> <br>
-                 Meu trabalho é fazer o seu negócio atingir mais pessoas!
-            </p>
-            <p>Ficou interessado e quer saber mais? <a href="">Entre em contato agora mesmo!</a></p>
+        <section class="position"> <!-- Sobre mim -->
+            <div id="cont-about-img">
+                <div id="border-img"></div>
+                <div><img src="./assets/sobre/sobreMim.png" alt="Foto Luiz Oliveira" id="about-img"></div> <!-- Foto Tempória - Tirar outra depois -->
+            </div>
+
+            <div id="about-cont">
+                <h2 class="titles">Sobre Mim</h2>
+                <section id="cont-about-desc">
+                    <p> <!-- Descrição -->
+                        Meu nome é Luiz de Oliveira, tenho 20 anos, moro em Macaé - RJ e sou um Desenvolvedor Web Full-Stack. 
+                        Atualmente curso bacharel em Sistemas de Informação, desenvolvo projetos para a UFRJ e trabalho com desenvolvimento
+                        de websites para todo tipo de negócio.
+                    </p>
+                    <p>O meu trabalho é fazer o seu negócio atingir mais pessoas!</p>
+                    <p>Ficou interessado e quer saber mais?</p>
+                </section>
+                <a href="" id="button-about">Entre em contato agora mesmo!</a>
+            </div>
         </section>
-        <section> <!-- Portfólio-->
+        <section class="position"> <!-- Portfólio-->
             <h2>Portfólio</h2> 
             <ul>
                 <li>Websites</li>
@@ -48,13 +57,13 @@
                 <p>Descrição do projeto</p>   
             </section>
         </section>
-        <section> <!-- Serviços -->
+        <section class="position"> <!-- Serviços -->
             <h2>Serviços</h2>
             <img src="./assets/serviços/" alt="Icone Website">
             <h3>Desenvolvimento de Sites</h3>
             <p>Projeto, desenvolvo e coloco no ar o website da sua empresa!</p>
         </section>
-        <section> <!-- Contatos -->
+        <section class="position"> <!-- Contatos -->
             <h2>Contato</h2>
             <h3>Entre em contato agora mesmo</h3>
             <p>Ficou interessado no meu trabalho? Entre em conato em vamos marcar uma reunião para fazer o seu negócio atingir mais pessoas!</p>

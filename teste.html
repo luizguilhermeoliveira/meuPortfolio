@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #conteiner-img-about{
+            position: relative;
+            height: auto;
+        }
+
+        #about-img{
+            position: absolute;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        #border-div{
+            position: absolute;
+            height: 290px;
+            width: 200px;
+            border: 7px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(45deg, blue, red);
+            border-radius: 10px;
+
+            top: 30px;
+            left: 60px;
+        }
+
+        .box-btn {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .botao-gradient {
+
+            background: linear-gradient(white, white) padding-box, linear-gradient(to right, #13f78c, #0be6e6, #f700c5) border-box;
+            border-radius: 50em;
+            border: 3px solid transparent;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #10a87d;
+            padding: 0.5em 1.5em;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner-img-about">
+        <div id="border-div"></div>
+        <div ><img src="./assets/sobre/sobreMim.png" alt="Foto Luiz Oliveira" id="about-img"></div>
+    </div>
+    <div class="box-btn">
+        <a href="#" class="botao-gradient">Veja mais</a>
+      </div>
+</body>
+</html>

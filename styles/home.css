@@ -6,7 +6,11 @@
 
 
 body{
-    background-color: #161f43;
+    background-color: #15272B;
+}
+/* Geral */
+.titles{
+    color: #d9dde6;
 }
 
 /* Header - Nav */
@@ -14,7 +18,7 @@ body{
 header{
     padding: 10px 50px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.176);
+    background-color: #02181d94;
 }
 
 #logo{
@@ -36,6 +40,7 @@ nav{
 
 .nav-li{
     display: inline-block;
+    color: #c8cfdd;
     margin-left: 100px;
     font-size: 20px;
     transition: transform .2s;
@@ -51,4 +56,73 @@ nav{
     padding: 15px 10px;
     text-decoration: none;
     color: white;
+}
+
+/* Main */ 
+
+.position{
+    width: 70%;
+    margin: 5% auto;
+    position: relative;
+}
+
+/* sobre */ 
+
+#cont-about-img{
+    position: relative;
+    height: 335px;
+    width: 274px;
+    display: inline-block;
+}
+
+#border-img{
+    position: absolute;
+    height: 290px;
+    width: 200px;
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, #3B9EAB, #73FAE0, #3B9EAB);
+    border-radius: 10px;
+
+    top: 30px;
+    left: 60px;
+}
+
+#about-img{
+    position: absolute;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#about-cont{
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+#cont-about-desc{
+    margin: 4% 0;
+}
+
+#cont-about-desc>p{
+    margin: 4% 0;
+    font-size: 18px;
+    color: #e5e0eb ;
+}
+
+#button-about{
+    position: absolute;
+    bottom: 10%; /* tem que ser 0 para telas menores de 1080 */
+    padding: 13px;
+    border-radius: 10px;
+    background: linear-gradient(-200deg, #58bea9, #010B2A);
+    text-decoration: none;
+    font-weight: 900;
+    transition: transform .2s;
+}
+
+#button-about:hover{
+    transform: scale(1.1);
 }
