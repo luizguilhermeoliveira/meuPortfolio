@@ -6,6 +6,10 @@
     <title>Document</title>
     <style>
 
+        body{
+            background-color: black;
+        }
+
         #conteiner-img-about{
             position: relative;
             height: auto;
@@ -21,10 +25,12 @@
             position: absolute;
             height: 290px;
             width: 200px;
-            border: 7px solid;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(45deg, blue, red);
+            border: double 7px transparent;
             border-radius: 10px;
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), 
+                                linear-gradient(45deg, #3B9EAB, #73FAE0, #3B9EAB);
+            background-origin: border-box;
+            background-clip: content-box, border-box; 
 
             top: 30px;
             left: 60px;
