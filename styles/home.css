@@ -19,12 +19,6 @@ li {
   color: #e5e0eb;
 }
 
-h3,
-p,
-li {
-  margin-bottom: 4%;
-}
-
 p {
   font-size: 18px;
   color: white;
@@ -48,7 +42,7 @@ h3 {
 }
 
 .button {
-  display: inline-block;
+  width: max-content;
   padding: 13px;
   border-radius: 10px;
   text-decoration: none;
@@ -120,16 +114,20 @@ nav {
 .position {
   width: 70%;
   margin: 5% auto;
-  position: relative;
 }
 
 /* Sobre */
+
+#about-cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 #cont-about-img {
   position: relative;
   height: 325px;
   width: 274px;
-  display: inline-block;
 }
 
 #border-img-about {
@@ -146,16 +144,18 @@ nav {
   border-radius: 10px;
 }
 
-#about-cont {
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-  right: 0;
+#about-text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  height: 325px;
 }
 
 #cont-about-desc {
-  margin: 4% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* Portifólio */
