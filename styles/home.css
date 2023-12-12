@@ -57,6 +57,13 @@ h3 {
 .button-R {
   background: linear-gradient(-200deg, #58bea9, #010b2a);
 }
+
+.cont-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 /* Header - Nav */
 
 header {
@@ -166,13 +173,6 @@ nav {
   gap: 60px;
 }
 
-#cont-headline-port {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
 #li-port {
   display: inline;
   font-size: 1.3em;
@@ -269,6 +269,7 @@ nav {
   border: double 5px transparent;
   background-image: linear-gradient(#15272b, #15272b),
     linear-gradient(90deg, #3b9eab, #73fae0, #3b9eab);
+  box-shadow: 0 0 20px rgb(156, 214, 246);
 }
 
 .cont-serv2 {
