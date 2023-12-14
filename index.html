@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Luiz de Oliveira</title>
   </head>
   <body>
     <!-- Nav -->
-    <header>
+    <header id="start">
       <a href=""
-        ><img src="./assets/header/logoEx.png" alt="logo" class="logo"
+        ><img
+          src="./assets/header/logoEx.png"
+          alt="Logo Luiz de Oliveira"
+          class="logo"
       /></a>
       <nav>
         <ul id="nav-ul">
-          <li class="nav-li"><a href="">Sobre Mim</a></li>
-          <li class="nav-li"><a href="">Portfólio</a></li>
-          <li class="nav-li"><a href="">Serviços</a></li>
-          <li class="nav-li"><a href="">Contato</a></li>
+          <li class="nav-li"><a href="#cont-about-img">Sobre Mim</a></li>
+          <li class="nav-li"><a href="#port">Portfólio</a></li>
+          <li class="nav-li"><a href="#serv">Serviços</a></li>
+          <li class="nav-li"><a href="#contatos">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -41,7 +50,7 @@
               Meu nome é Luiz Guilherme de Oliveira, tenho 20 anos, moro em
               Macaé - RJ e sou um Desenvolvedor Web Full-Stack. Atualmente curso
               Bacharel em Sistemas de Informação, desenvolvo projetos para a
-              UFRJ e trabalho com desenvolvimento de websites para todo tipo de
+              UFRJ e trabalho com desenvolvimento de Sites para todo tipo de
               negócio.
             </p>
             <p>O meu trabalho é fazer o seu negócio atingir mais pessoas!</p>
@@ -62,8 +71,8 @@
         </div>
 
         <div id="cont-box">
+          <!-- Projeto 1 -->
           <section class="cont-port">
-            <!-- Projeto 1 -->
             <div class="text-port">
               <h3 class="name-proj">Nome do projeto</h3>
               <p>
@@ -81,19 +90,19 @@
               <div class="border-deg border-img-port border-img-port-1"></div>
               <img
                 src="./assets/portfolio/exemploProj.jpg"
-                alt="Foto do projeto 1"
+                alt="Foto do Projeto 1"
                 class="img-port img-port-1"
               />
             </div>
           </section>
 
+          <!-- Projeto 2 -->
           <section class="cont-port">
-            <!-- Projeto 2 -->
             <div class="cont-port-img">
               <div class="border-deg border-img-port border-img-port-2"></div>
               <img
                 src="./assets/portfolio/exemploProj.jpg"
-                alt="Foto do projeto 2"
+                alt="Foto do Projeto 2"
                 class="img-port img-port-2"
               />
             </div>
@@ -125,7 +134,7 @@
                 <div class="cont-serv-img">
                   <img
                     src="./assets/serviços/iconWebsite.png"
-                    alt="Icone Website"
+                    alt="Icone Desenvolvimento de Sites"
                     class="serv-img"
                   />
                 </div>
@@ -148,7 +157,7 @@
                 <div class="cont-serv-img">
                   <img
                     src="./assets/serviços/iconWebsite.png"
-                    alt="Icone Website"
+                    alt="Icone Em Breve"
                     class="serv-img"
                   />
                 </div>
@@ -181,25 +190,31 @@
           <div id="contContat">
             <div class="contInfoContat">
               <div class="contImgContat">
-                <a href="" target="_blank"
+                <a href="tel:+5522998402786" target="_blank"
                   ><img
                     src="./assets/contato/telefone.png"
-                    alt=""
+                    alt="Icone de Celular"
                     class="imgContat"
                 /></a>
               </div>
-              <a href="" target="_blank">22 999840-2786</a>
+              <a href="tel:+5522998402786" target="_blank">(22) 999840-2786</a>
             </div>
             <div class="contInfoContat">
               <div class="contImgContat">
-                <a href="" target="_blank"
+                <a
+                  href="https://wa.me//5522998402786?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o%20de%20Desenvolvimento%20Web%21%20Pode%20me%20ajudar%3F"
+                  target="_blank"
                   ><img
                     src="./assets/contato/whatsapp.png"
-                    alt=""
+                    alt="Icone do WhatsApp"
                     class="imgContat"
                 /></a>
               </div>
-              <a href="" target="_blank">Envie uma mensagem</a>
+              <a
+                href="https://wa.me//5522998402786?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o%20de%20Desenvolvimento%20Web%21%20Pode%20me%20ajudar%3F"
+                target="_blank"
+                >Envie uma mensagem</a
+              >
             </div>
             <div class="contInfoContat">
               <div class="contImgContat">
@@ -208,7 +223,7 @@
                   target="_blank"
                   ><img
                     src="./assets/contato/email.png"
-                    alt=""
+                    alt="Icone do Email"
                     class="imgContat"
                 /></a>
               </div>
@@ -221,12 +236,18 @@
       </section>
       <!-- Rodapé -->
       <section id="contRoda">
-        <a href=""
-          ><img src="./assets/header/logoEx.png" alt="" class="logo"
+        <a href="#start"
+          ><img
+            src="./assets/header/logoEx.png"
+            alt="Logo Luiz de Oliveira"
+            class="logo"
         /></a>
         <p id="txtRoda">Desenvolvido por Luiz de Oliveira</p>
-        <a href=""
-          ><img src="./assets/contato/github.png" alt="" class="logo"
+        <a href="https://github.com/luizguilhermeoliveira"
+          ><img
+            src="./assets/contato/github.png"
+            alt="Icone Github"
+            class="logo"
         /></a>
       </section>
     </footer>
