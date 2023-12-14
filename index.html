@@ -15,24 +15,26 @@
   <body>
     <!-- Nav -->
     <header id="start">
-      <a href=""
-        ><img
-          src="./assets/header/logoEx.png"
-          alt="Logo Luiz de Oliveira"
-          class="logo"
-      /></a>
-      <nav>
-        <ul id="nav-ul">
-          <li class="nav-li"><a href="#cont-about-img">Sobre Mim</a></li>
-          <li class="nav-li"><a href="#port">Portfólio</a></li>
-          <li class="nav-li"><a href="#serv">Serviços</a></li>
-          <li class="nav-li"><a href="#contatos">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div id="cont-header" class="max-width">
+        <a href=""
+          ><img
+            src="./assets/header/logoEx.png"
+            alt="Logo Luiz de Oliveira"
+            class="logo"
+        /></a>
+        <nav>
+          <ul id="nav-ul">
+            <li class="nav-li"><a href="#cont-about-img">Sobre Mim</a></li>
+            <li class="nav-li"><a href="#port">Portfólio</a></li>
+            <li class="nav-li"><a href="#serv">Serviços</a></li>
+            <li class="nav-li"><a href="#contatos">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
       <!-- Sobre mim -->
-      <section id="about-cont" class="position">
+      <section id="about-cont" class="position max-width">
         <div id="cont-about-img">
           <div id="border-img-about" class="border-deg"></div>
           <img
@@ -62,7 +64,7 @@
         </div>
       </section>
       <!-- Portfólio-->
-      <section class="position" id="port">
+      <section class="position max-width" id="port">
         <div class="cont-headline">
           <h2 class="titles head-port">Portfólio</h2>
           <ul>
@@ -122,7 +124,7 @@
         </div>
       </section>
       <!-- Serviços -->
-      <section class="position" id="serv">
+      <section class="position max-width" id="serv">
         <div class="cont-headline">
           <h2 class="titles">Serviços</h2>
         </div>
@@ -176,80 +178,82 @@
       </section>
     </main>
     <footer>
-      <!-- Contatos -->
-      <section id="contatos">
-        <div id="contatos2">
-          <div id="contHeadlineContat">
-            <h2 class="titles">Contato</h2>
-            <p>
-              Ficou interessado no meu trabalho? Entre em contato e vamos marcar
-              uma reunião para fazer o seu negócio atingir cada vez mais
-              pessoas!
-            </p>
-          </div>
-          <div id="contContat">
-            <div class="contInfoContat">
-              <div class="contImgContat">
-                <a href="tel:+5522998402786" target="_blank"
-                  ><img
-                    src="./assets/contato/telefone.png"
-                    alt="Icone de Celular"
-                    class="imgContat"
-                /></a>
-              </div>
-              <a href="tel:+5522998402786" target="_blank">(22) 999840-2786</a>
+      <div id="cont-footer" class="max-width">
+        <!-- Contatos -->
+        <section id="contatos">
+          <div id="contatos2">
+            <div id="contHeadlineContat">
+              <h2 class="titles">Contato</h2>
+              <p>
+                Ficou interessado no meu trabalho? Entre em contato e vamos marcar
+                uma reunião para fazer o seu negócio atingir cada vez mais
+                pessoas!
+              </p>
             </div>
-            <div class="contInfoContat">
-              <div class="contImgContat">
+            <div id="contContat">
+              <div class="contInfoContat">
+                <div class="contImgContat">
+                  <a href="tel:+5522998402786" target="_blank"
+                    ><img
+                      src="./assets/contato/telefone.png"
+                      alt="Icone de Celular"
+                      class="imgContat"
+                  /></a>
+                </div>
+                <a href="tel:+5522998402786" target="_blank">(22) 999840-2786</a>
+              </div>
+              <div class="contInfoContat">
+                <div class="contImgContat">
+                  <a
+                    href="https://wa.me//5522998402786?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o%20de%20Desenvolvimento%20Web%21%20Pode%20me%20ajudar%3F"
+                    target="_blank"
+                    ><img
+                      src="./assets/contato/whatsapp.png"
+                      alt="Icone do WhatsApp"
+                      class="imgContat"
+                  /></a>
+                </div>
                 <a
                   href="https://wa.me//5522998402786?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o%20de%20Desenvolvimento%20Web%21%20Pode%20me%20ajudar%3F"
                   target="_blank"
-                  ><img
-                    src="./assets/contato/whatsapp.png"
-                    alt="Icone do WhatsApp"
-                    class="imgContat"
-                /></a>
+                  >Envie uma mensagem</a
+                >
               </div>
-              <a
-                href="https://wa.me//5522998402786?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20contratar%20o%20seu%20servi%C3%A7o%20de%20Desenvolvimento%20Web%21%20Pode%20me%20ajudar%3F"
-                target="_blank"
-                >Envie uma mensagem</a
-              >
-            </div>
-            <div class="contInfoContat">
-              <div class="contImgContat">
-                <a
-                  href="mailto:aoliveira.luizguilherme@gmail.com"
-                  target="_blank"
-                  ><img
-                    src="./assets/contato/email.png"
-                    alt="Icone do Email"
-                    class="imgContat"
-                /></a>
+              <div class="contInfoContat">
+                <div class="contImgContat">
+                  <a
+                    href="mailto:aoliveira.luizguilherme@gmail.com"
+                    target="_blank"
+                    ><img
+                      src="./assets/contato/email.png"
+                      alt="Icone do Email"
+                      class="imgContat"
+                  /></a>
+                </div>
+                <a href="mailto:aoliveira.luizguilherme@gmail.com" target="_blank"
+                  >aoliveira.luizguilherme@gmail.com</a
+                >
               </div>
-              <a href="mailto:aoliveira.luizguilherme@gmail.com" target="_blank"
-                >aoliveira.luizguilherme@gmail.com</a
-              >
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Rodapé -->
-      <section id="contRoda">
-        <a href="#start"
-          ><img
-            src="./assets/header/logoEx.png"
-            alt="Logo Luiz de Oliveira"
-            class="logo"
-        /></a>
-        <p id="txtRoda">Desenvolvido por Luiz de Oliveira</p>
-        <a href="https://github.com/luizguilhermeoliveira"
-          ><img
-            src="./assets/contato/github.png"
-            alt="Icone Github"
-            class="logo"
-        /></a>
-      </section>
+        </section>
+        <!-- Rodapé -->
+        <section id="contRoda">
+          <a href="#start"
+            ><img
+              src="./assets/header/logoEx.png"
+              alt="Logo Luiz de Oliveira"
+              class="logo"
+          /></a>
+          <p id="txtRoda">Desenvolvido por Luiz de Oliveira</p>
+          <a href="https://github.com/luizguilhermeoliveira"
+            ><img
+              src="./assets/contato/github.png"
+              alt="Icone Github"
+              class="logo"
+          /></a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

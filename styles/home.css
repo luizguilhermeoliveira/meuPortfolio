@@ -79,14 +79,19 @@ h3 {
 .logo:hover {
   transform: scale(1.1);
 }
+
+.max-width {
+  max-width: 1900px;
+  margin: 0 auto;
+}
 /* Header - Nav */
 
-header {
+#cont-header {
+  background-color: #02181d94;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background-color: #02181d94;
 }
 
 nav {
@@ -125,7 +130,7 @@ nav {
 
 .position {
   width: 60%;
-  margin: 10% auto;
+  margin: 100px auto;
 }
 
 /* Sobre */
@@ -307,7 +312,7 @@ nav {
 
 /* Footer */
 
-footer {
+#cont-footer {
   background: linear-gradient(300deg, #58bea9, #010b2a);
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
