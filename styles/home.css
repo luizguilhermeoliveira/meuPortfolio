@@ -22,7 +22,7 @@ body {
 
 p,
 li {
-  font-size: 18;
+  font-size: 18px;
   color: #d9dde6;
 }
 
@@ -83,6 +83,10 @@ h3 {
 .max-width {
   max-width: 1900px;
   margin: 0 auto;
+}
+
+a {
+  display: inline-block;
 }
 /* Header - Nav */
 
@@ -166,7 +170,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   width: 55%;
-  height: 325px;
+  height: max-content;
 }
 
 #cont-about-desc {
@@ -209,7 +213,8 @@ nav {
   justify-content: space-between;
   text-align: justify;
   width: 35%;
-  height: 285px;
+  height: max-content;
+  gap: 30px;
 }
 
 .button-port {
@@ -401,4 +406,88 @@ nav {
   color: #c7c7c7;
   font-weight: 300;
   font-size: 12px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1450px) {
+  .titles {
+    font-size: 1.5em;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+    color: #d9dde6;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .titles {
+    text-align: center;
+  }
+
+  /*main */
+  .position {
+    width: 80%;
+  }
+
+  /* Sobre */
+
+  #about-cont {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #about-text-cont {
+    width: 100%;
+    height: max-content;
+  }
+
+  /* Portfolio */
+
+  .cont-port {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .text-port {
+    width: 100%;
+  }
+
+  .cont-port-img {
+    height: 245px;
+  }
+
+  .border-img-port {
+    height: 200px;
+    width: 300px;
+  }
+
+  .img-port {
+    width: 332px;
+  }
+
+  /* img right */
+
+  .border-img-port-1 {
+    right: 35px;
+  }
+
+  .img-port-1 {
+    right: 0;
+  }
+
+  /* Serviços */
+
+  #serv-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .cont-serv1 {
+    width: 90%;
+  }
 }
