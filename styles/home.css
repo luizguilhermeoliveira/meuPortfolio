@@ -437,6 +437,7 @@ nav .closeMenu {
   }
 
   /*main */
+
   .position {
     width: 80%;
   }
@@ -444,9 +445,9 @@ nav .closeMenu {
   /* Header - Nav */
 
   nav #nav-ul {
-    height: 60vw;
-    width: 30vw;
-    position: absolute;
+    height: 180px;
+    width: 100vw;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 0;
@@ -472,14 +473,13 @@ nav .closeMenu {
   nav #nav-ul li a {
     background-color: none;
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   nav #nav-ul li a:hover {
     background-color: #010b2a00;
   }
 
-  nav #nav-ul
   /* Sobre */
 
   #about-cont {
