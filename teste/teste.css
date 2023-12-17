@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+  background-color: orange;
+}
+
+/* A partir daqui */
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* IMPORTANTE */
+
+@media (max-width: 1200px) {
+  nav .mainMenu {
+    height: 50vh;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a {
+    background-color: none;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  nav .mainMenu li a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: orange;
+  }
+}

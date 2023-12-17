@@ -91,20 +91,27 @@ a {
 /* Header - Nav */
 
 #cont-header {
-  background-color: #02181d94;
+  background-color: #0a1e23;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
 }
 
-nav {
-  display: flex;
+nav .openMenu {
+  display: none;
+  cursor: pointer;
+}
+
+nav .closeMenu {
+  display: none;
+  cursor: pointer;
 }
 
 #nav-ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   justify-content: center;
   column-gap: 40px;
   row-gap: 25px;
@@ -112,6 +119,8 @@ nav {
 }
 
 .nav-li {
+  display: flex;
+  align-items: center;
   color: #c8cfdd;
   margin: 0 0;
   font-size: 20px;
@@ -432,6 +441,45 @@ nav {
     width: 80%;
   }
 
+  /* Header - Nav */
+
+  nav #nav-ul {
+    height: 60vw;
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a1e23;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav #nav-ul .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav #nav-ul li a {
+    background-color: none;
+    color: white;
+    font-size: 1.6rem;
+  }
+
+  nav #nav-ul li a:hover {
+    background-color: #010b2a00;
+  }
+
+  nav #nav-ul
   /* Sobre */
 
   #about-cont {

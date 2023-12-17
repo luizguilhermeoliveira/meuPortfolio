@@ -10,7 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Luiz de Oliveira</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+    crossorigin="anonymous"
+  />
+  <title>Luiz de Oliveira</title>
   </head>
   <body>
     <!-- Nav -->
@@ -23,11 +29,13 @@
             class="logo"
         /></a>
         <nav>
+          <div class="openMenu nav-li"><i class="fa fa-bars"></i></div>
           <ul id="nav-ul">
             <li class="nav-li"><a href="#cont-about-img">Sobre Mim</a></li>
             <li class="nav-li"><a href="#port">Portfólio</a></li>
             <li class="nav-li"><a href="#serv">Serviços</a></li>
             <li class="nav-li"><a href="#contatos">Contato</a></li>
+            <div class="closeMenu nav-li"><i class="fa fa-times"></i></div>
           </ul>
         </nav>
       </header>
@@ -255,5 +263,7 @@
         </section>
       </div>
     </footer>
+
+    <script src="./apps/mainPage.js"></script>
   </body>
 </html>
